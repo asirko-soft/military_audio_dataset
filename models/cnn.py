@@ -170,7 +170,7 @@ class CNN10(nn.Module):
         if not os.path.exists(out_dir):
             os.makedirs(out_dir, exist_ok=True)
         
-        if os.path.exists(os.path.join(out_dir, 'Cnn6_mAP=0.343.pth')) == False:
+        if os.path.exists(os.path.join(out_dir, 'Cnn10_mAP=0.380.pth')) == False:
             # this model performs 0.380 mAP on the audioset eval set
             audioset_mdl_url = 'https://drive.google.com/uc?id=1rkhOf7TReYJjwYb8JLB6mX_JNp6L1Ci7'
             gdown.download(audioset_mdl_url, os.path.join(out_dir, 'Cnn10_mAP=0.380.pth'), quiet=False)
